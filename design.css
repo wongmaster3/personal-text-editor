@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  background-color: gray;
+  height: auto;
+  margin: 0px;
+}
+
+#edit-bar {
+  background-color: blue;
+  height: 20px;
+}
+
+#text-area {
+  height: auto;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  font-family: Courier;
+}
+
+.line {
+  height: auto;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.caret {
+  position: absolute;
+  color: white;
+  animation: blinker 0.5s linear infinite;
+  border-style: solid;
+  border-width: 0.85px;
+  height: 20px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
